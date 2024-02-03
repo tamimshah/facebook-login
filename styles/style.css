@@ -1,0 +1,55 @@
+*{
+    font-family: inherit;
+}
+.container .main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* title and description */
+.title img{
+    height: 106px;
+    width: 321px;
+}
+.description p{
+    font-size: 24px;
+}
+/* log oin & sign up */
+.container .main-form{
+    max-width: 370px;
+    height: 396px;
+    /* border: 1px solid gray; */
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    margin-top: 60px
+
+}
+.container .main-form .log-in{
+    display: grid;
+    margin: 10px;
+}
+.container .main-form .log-in input{
+    border: 1px solid rgb(195, 190, 190);
+    border-radius: 6px;
+    font-size: 17px;
+    margin: 10px;
+    padding: 14px 16px;
+}
+
+.container .main-form .log-in button{
+    color: white;
+    background-color: #1877f2;
+    border: none;
+    width: 332px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 16px;
+}
+.main-form a{
+    text-decoration: none;
+    color: #1877f2;
+    margin: 110px;
+    font-size: 14px;
+}
