@@ -2,16 +2,25 @@
     font-family: inherit;
 }
 .container .main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    display: flex;
 }
 /* title and description */
-.title img{
+.title .description img{
     height: 106px;
     width: 321px;
 }
 .description p{
     font-size: 24px;
+}
+.container .main .title{
+    margin: 100px;
+}
+.container .main .title .description p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    width: 500px;
 }
 /* log oin & sign up */
 .container .main-form{
@@ -21,7 +30,7 @@
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-    margin-top: 60px
+    margin-top: 60px;
 
 }
 .container .main-form .log-in{
@@ -46,10 +55,58 @@
     border-radius: 6px;
     font-size: 20px;
     padding: 0 16px;
+    cursor: pointer;
 }
 .main-form a{
     text-decoration: none;
     color: #1877f2;
-    margin: 110px;
+    margin: 16px 110px;
     font-size: 14px;
 }
+.main-form .hr-line{
+    width: 90%;
+    opacity: 0.3;
+    margin: 20px auto;
+}
+.container .main-form .log-in .new-account{
+    /* margin: 20px; */
+    margin-left: 84px;
+    height: 50px;
+    width: 200px;
+    border: none;
+    color: white;
+    background-color: #42b72a;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+.container .main-form .from-end-text p{
+    padding: 30px;
+}
+.container .main-form .from-end-text p a{
+    color: black;
+    font-weight: bold;
+    margin: auto;
+}
+/* footer */
+footer p{
+    position: fixed;
+    width: 100%;
+    margin: 79px;
+    text-align: center;
+}
+/* Mobile view responsive */
+/* @media (min-width: 576px){
+    .container .main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .title .description img{
+        width: 314px;
+    }
+    .container .main .title .description p{
+        width: 332px;
+    }
+} */
