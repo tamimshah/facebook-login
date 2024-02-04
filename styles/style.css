@@ -2,9 +2,9 @@
     font-family: inherit;
 }
 .container .main{
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr); */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* display: flex; */
 }
 /* title and description */
 .title .description img{
@@ -26,6 +26,9 @@
 .container .main-form{
     max-width: 370px;
     height: 396px;
+    position: fixed;
+    right: 150px;
+
     /* border: 1px solid gray; */
     border-radius: 8px;
     background-color: #fff;
@@ -94,7 +97,7 @@
 footer p{
     position: fixed;
     width: 100%;
-    margin: 79px;
+    padding: 90px;
     text-align: center;
 }
 /* Mobile view responsive */
