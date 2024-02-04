@@ -2,8 +2,9 @@
     font-family: inherit;
 }
 .container .main{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    display: flex;
 }
 /* title and description */
 .title .description img{
